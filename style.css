@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+/* general color */
+:root{
+    --color--white:#fff;
+    --color--light:#f4f4f4;
+    --color--dark:#525252;
+    --color--black:#141415;
+    --color--primary:rgba(242,78,30,0.7);
+    --color--primary-light:hsl(14,89%,53%,12%);
+    --color--success:#29f5a6;
+    --color--warning:#ffce31;
+    --transition:all 300ms ease;
+}
+
+/* global settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:var(--color--white);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color--dark);
+}
+h1,h2,h3,h4,h5{
+    color: var(--color--black);
+    line-height: 1.2;
+}
+h1{
+    font-size: 3.8rem;
+    color: var(--color--primary);
+}
+h2{
+    font-size: 2.6rem;
+}
+p{
+    line-height: 1.8;
+}
+
+/* -----buttons----- */
+.general-btn{
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    color: var(--color--black);
+    background-color: var(--color--white);
+    display: inline-block;
+    margin: 0.5rem 0;
+    transition: var(--transition);
+}
+.general-btn-2{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px;
+    width: 150px;
+    background: #ebeef1;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #00a037;
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+    -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.general-btn-2:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10,99,169,0.16),
+            inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.general-btn:hover{
+    box-shadow: 0 2rem 2rem var(--color--primary-light);
+    color: var(--color--primary);
+    border-color: var(--color--primary);
+}
+.second-btn{
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width:50%;
+    border: none;
+    padding: 1rem;
+    background: var(--color--primary);
+    color: var(--color--white);
+    cursor: pointer;
+}
+.second-btn:hover{
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+    -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+
+
+
+
+/* <----------------------------------------------------------nav-bar-----------------------------------------------------------> */
+body > header > nav{
+    background: #ebeef1!important;
+}
+body > header > nav > div > button{
+    color:var(--color--primary)!important;
+    border: none!important;
+}
+#navbarSupportedContent > ul > li:nth-child(2) > a:hover{
+    font-weight: lighter;
+    color:var(--color--primary);
+    transition: var(--transition);
+}
+#navbarSupportedContent > ul > li:nth-child(3) > a:hover{
+    font-weight: lighter;
+    color: var(--color--primary);
+}
+#navbarSupportedContent > ul > li:nth-child(4) > a:hover{
+    font-weight: lighter;
+    transition: 1s ease-in-out;
+    color: var(--color--primary);
+}
+#navbarSupportedContent > ul > li.nav-item.ms-1 > a{
+    color: var(--color--primary);
+}
+body > header > nav > div > a{
+    text-decoration: none;
+    color:var(--color--primary);
+    border: 2px solid var(--color--primary);   
+}
+body > header > nav > div > button > span{
+    color: var(--color--primary);
+}
+#navbarSupportedContent > form > button > a{
+    text-decoration: none;
+    color: #00a037;
+}
+/* <------------------------------------------------navbar end----------------------------------------------------------------------> */
+
+/*<------------------------------------------------- main body----------------------------------------------------------------------> */
+body > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-body{
+    width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+    display: flex;  
+    background-color: #fefbe9;
+}
+.left-side{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.links{
+    display: flex;
+}
+body > div.main-body.container > div > div > div > div:nth-child(n) > i{
+    color: var(--color--primary);
+    margin: 20px 0 0 20px;
+    font-size: 2rem;
+}
+body > div.main-body.container > div > div > p:nth-child(3),
+body > div.main-body.container > div > div > h1{
+    text-align: start;
+}
+
+            /* countdown design */
+.countdownContainer{
+    text-align: center;
+    background:#2b6777;
+    padding: 10px;
+    color: var(--color--primary);
+    border-radius: 6px;
+}
+#days{
+    color:#fadc5e ;
+    padding: 10px;
+}
+#minutes{
+    color: #a6ddb9;
+    padding: 10px;
+}
+#hours{
+    color: #f8aba1;
+    padding: 10px;
+
+}
+#seconds{
+    color: #53aad6;
+    padding: 10px;
+}
+body > div > div > div.right-side.col-lg-5.col-xs-12.shadow.p-3.rounded > table > tbody > tr:nth-child(2){
+    background-color: #f4f4f4;
+}
+body > div > div > div.right-side.col-lg-5.col-xs-12{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    font-size: 80px;
+}
+/*-------- animation------ */
+/* .rocket{
+    width: 16rem;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 50%;
+        opacity: 0.5;
+    }
+} */
+/* <--------------------------------------------------------mainbody end------------------------------------------------------------> */
+
+/* <------------------------------------------------------second section------------------------------------------------------------> */
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(1){
+    background-color: #fadc5e!important;
+}
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(2){
+    background-color: #a6ddb9!important;
+}
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(3){
+    background-color: #f8aba1!important;
+}
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(4){
+    background-color: #53aad6!important;
+}
+
+.second-section{
+    text-align: center;
+    background-color: #F6F6F8;
+}
+.featuersCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 3rem;
+}
+.a{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(n){
+    cursor: pointer;
+    
+    padding: 1rem;
+}
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(n):hover{
+    box-shadow: 0 3rem 5rem var(--color--primary-light);
+    transform: translateY(-20px);
+    border: 2px solid var(--color--primary);
+    transition: 0.5s ease-in-out;
+   
+}
+body > section > div.row.featuersCards > div:nth-child(n) > img{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+body > section > div.row.featuersCards > div:nth-child(n) > h3{
+    margin-top: 20px;
+}
+body > section > div.row.featuersCards > div:nth-child(n) > p{
+    margin-top: 10px;
+}
+body > section > div.row.featuersCards > div:nth-child(n){
+    margin-top: 1rem;
+}
+body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(n) > a{
+    color: var(--color--primary);
+    cursor: pointer;
+}
+/* <-----------------------------------------------second section end-----------------------------------------------------------> */
+
+/*<----------------------------------------------- image slider-----------------------------------------------------------------> */
+
+.slider{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F8;
+    
+}
+
+
+/* <-----------------------------------------------image slider end------------------------------------------------------------> */
+
+
+
+/*<----------------------------------------------- call to action---------------------------------------------------------------> */
+body > section.container > div.callToAction > div.right.col-lg-5 > img{
+    width: 300px;
+    height: 200px;
+}
+.callToAction{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* <---------------------------------------------------call to action end------------------------------------------------------->*/
+
+/*<---------------------------------------------------------- contact-----------------------------------------------------------> */
+#contact > div > div:nth-child(2) > div.col-md-7 > div > form > div:nth-child(4) > div > button{
+    background-color: var(--color--primary);
+    color: var(--color--light);
+    font-weight: bold;
+}
+#contact > div > div:nth-child(2) > div.col-md-7 > div > form > div:nth-child(4) > div > button:hover{
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+    -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+#contact > div > div:nth-child(2) > div.col-md-5 > div:nth-child(1) > div.icon.fs-4 > i,
+#contact > div > div:nth-child(2) > div.col-md-5 > div:nth-child(2) > div.icon.fs-4 > i,
+#contact > div > div:nth-child(2) > div.col-md-5 > div:nth-child(3) > div.icon.fs-4 > i{
+    color: var(--color--primary);
+}
+/* <--------------------------------------------------------contact end-------------------------------------------------------> */
+
+/* <---------------------------------------------------------footer-----------------------------------------------------------> */
+footer{
+    background-color: var(--color--primary);
+    color: #fff;
+}
+body > footer > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body > footer > div > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* <----------------------------------------------footer end-------------------------------------------------------------> */
+
+
+/*<------------------------------------------------ media Query----------------------------------------------------------> */
+
+
+@media only screen and (max-width:321px){
+    .left-side{
+        margin-left: 1px;
+        align-items: center;
+    }
+    body > header > nav > div > button{
+        margin-right: 2rem;
+    }
+    body > div.main-body.container > div > div > p:nth-child(3){
+        text-align: center;
+    }
+    body > div.main-body.container > div > div > p:nth-child(1){
+        text-align: center;
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12{
+        text-align: center;
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12 > button{
+        margin-top: 1rem!important;
+    }
+    body > section.container.p-5.mt-3 > div > div.right.col-lg-5.col-md-12 > img{
+        align-items: center;
+    }
+    body > div.main-body.container > div > div > div > div:nth-child(n) > i{
+        margin: 15px 0 0 0;
+    }
+    body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(n):hover{
+        box-shadow: 0 3rem 5rem var(--color--primary-light);
+        transform: translateY(0px);
+        border: 2px solid var(--color--primary);
+        transition: 0.5s ease-in-out;
+    }
+    body > header > nav{
+        width: 320px!important;
+    }
+}
+@media only screen and (max-width:376px){
+    body > div > div > div.left-side.col-lg-5.col-xs-12{
+        margin-top: 10rem;
+    }
+    body > div.main-body.container > div > div{
+        padding: 6px;
+    }
+    .left-side{
+        margin-left: 1px;
+        align-items: center;
+    }
+    body > div.main-body.container > div > div > p:nth-child(3){
+        text-align: center;
+        margin: 1.2rem;
+    }
+    body > div.main-body.container > div > div > p:nth-child(1){
+        text-align: center;
+        margin: 0px 10px 0 10px;
+    }
+    body > div > div > div.left-side.col-lg-5.col-xs-12{
+        padding: 0 0rem 0rem 2rem;
+        text-align: center;
+    }
+
+    body > div > div > div.right-side.col-lg-5.col-xs-12.shadow.p-3.rounded > table > tbody > tr.info{
+       
+        font-size: 42px;
+    }
+
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12{
+        text-align: center;
+        margin: 0.5rem;
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12 > button{
+        margin-top: 1rem!important;
+    }
+    body > section.container.p-5.mt-3 > div > div.right.col-lg-5.col-md-12 > img{
+        align-items: center;
+    }
+    body > section.container-fluid.second-section.shadow.p-3.rounded > div:nth-child(1) > p{
+        margin: 1rem;
+    }
+    body > section.container-fluid.slider.pt-1.shadow.p-3.rounded.mb-5 > p{
+        margin: 1rem;
+    }
+    body > section.container-fluid.slider.pt-1.shadow.p-3.rounded.mb-5{
+       text-align: center;
+    }
+    #carouselExampleIndicators > div.carousel-inner > div:nth-child(n) > img{
+        width: 50%!important;
+    }
+    #carouselExampleIndicators > div.carousel-inner > div:nth-child(n) > img{
+        margin-left: 10.7rem;
+    }
+    body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(n):hover{
+        box-shadow: 0 3rem 5rem var(--color--primary-light);
+        transform: translateY(0px);
+        border: 2px solid var(--color--primary);
+        transition: 0.5s ease-in-out;
+       
+    }
+    #contact > div{
+        padding: 3rem;
+    }
+    body > header > nav{
+        width: 375px!important;
+    }
+    
+}
+@media only screen and (max-width:426px){
+    body > div > div > div.left-side.col-lg-5.col-xs-12{
+        margin-top: 5rem!important;
+    }
+
+    body > div.main-body.container > div > div{
+        padding: 6px;
+    }
+    .left-side{
+        margin-left: 1px;
+        align-items: center;
+    }
+    body > div.main-body.container > div > div > p:nth-child(3){
+        text-align: center;
+        margin: 2.2rem;
+    }
+    body > div.main-body.container > div > div > p:nth-child(1){
+        text-align: center;
+        margin: 0 35px 10px 35px;
+    }
+    body > section.container-fluid.second-section.shadow.p-3.rounded > div:nth-child(1) > p{
+        margin: 0 3rem 0 3rem!important;
+    }
+    body > section.container-fluid.slider.pt-1.shadow.p-3.rounded.mb-5 > p{
+        margin: 0 3rem 1rem 3rem!important;
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12{
+        text-align: center;
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12 > button{
+        margin-top: 1rem!important;
+    }
+    body > section.container.p-5.mt-3 > div > div.right.col-lg-5.col-md-12 > img{
+        align-items: center;
+    }
+    body > section.container-fluid.second-section.shadow.p-3.rounded > div:nth-child(1) > p{
+        margin: 1rem;
+    }
+    body > section.container-fluid.slider.pt-1.shadow.p-3.rounded.mb-5 > p{
+        margin: 1rem;
+    }
+    body > section.container-fluid.slider.pt-1.shadow.p-3.rounded.mb-5{
+       text-align: center;
+    }
+    #carouselExampleIndicators > div.carousel-inner > div:nth-child(n) > img{
+        width: 50%!important;
+    }
+    #carouselExampleIndicators > div.carousel-inner > div:nth-child(n) > img{
+        margin: auto;
+    }
+    body > section.container-fluid.second-section.shadow.p-3.rounded > div.row.featuersCards > div:nth-child(n):hover{
+        box-shadow: 0 3rem 5rem var(--color--primary-light);
+        transform: translateY(0px);
+        border: 2px solid var(--color--primary);
+        transition: 0.5s ease-in-out;
+       
+    }
+    #contact > div{
+        padding: 3rem;
+    }
+    body > header > nav > div > a{
+        margin-left: 0;
+    }
+    body > header > nav{
+        width: 425px;
+    }
+    /* body > div > div > div.left-side.me-3.col-lg-5.col-xs-12 > p:nth-child(1){
+        text-align: center;
+    } */
+    body > div > div > div.left-side.me-3.col-lg-5.col-xs-12{
+        padding: 3rem;
+        height: fit-content;
+        text-align: center;
+    }
+    body > div > div > div.right-side.col-lg-5.col-xs-12.shadow.p-3.rounded > table > tbody > tr.info{
+        font-size: 40px;
+    }
+ 
+}
+@media only screen and (max-width:769px){
+    body > div > div > div.left-side.col-lg-5.col-xs-12{
+        margin-top: 10rem;
+    }
+    body > div > div > div.left-side.col-lg-5.col-xs-12{
+        align-items: center;
+    }
+    body > div > div > div.left-side.col-lg-5.col-xs-12 > button{
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12{
+        text-align: center;
+    
+    }
+    body > section.container.p-5.mt-3 > div > div.left.col-lg-5.col-md-12 > button{
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+}
+@media only screen and (min-width:1024px){
+    .main-body{
+        height: 98.2vh;
+    }
+}
